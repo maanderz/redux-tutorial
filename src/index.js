@@ -11,8 +11,7 @@ import App from "./App";
 import rootReducer from "./reducers";
 
 // Assets
-import "./style.css";
-
+import "./styles.css";
 const store = createStore(
   rootReducer,
   composeWithDevTools(applyMiddleware(thunk))
