@@ -26,7 +26,6 @@ export function fetchPosts() {
         "https://jsonplaceholder.typicode.com/posts"
       );
       const data = await response.json();
-
       dispatch(getPostsSuccess(data));
     } catch (error) {
       dispatch(getPostsFailure());
